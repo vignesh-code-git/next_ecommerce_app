@@ -27,6 +27,9 @@
 .search {
   flex: 1;
   display: flex;
+  margin-right: 20px;
+  margin-left: 5px;
+ 
 }
 
 .search input {
@@ -36,6 +39,8 @@
   border: 1px solid #ccc;
   border-radius: 20px 0 0 20px;
   outline: none;
+  
+
 }
 
 .searchBtn {
