@@ -1,0 +1,169 @@
+/* MAIN HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-family: "Inter", sans-serif;
+}
+
+/* LEFT SECTION: LOGO + SEARCH + HAMBURGER */
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.search {
+  flex: 1;
+  display: flex;
+}
+
+.search input {
+  flex: 1;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.searchBtn {
+  padding: 8px 17px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #eee;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 4px;
+}
+
+/* NAV LINKS */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.logoutBtn {
+  background-color: white;
+  padding: 7px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cartLink {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cartIconWrapper {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* =================== RESPONSIVE =================== */
+
+/* TABLET */
+@media screen and (max-width: 900px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .search {
+    max-width: 100%;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .leftSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .search {
+    flex: 1;
+    margin: 0;
+  }
+
+  /* SHOW HAMBURGER */
+  .hamburger {
+    display: flex;
+  }
+
+  /* HIDE NAV BY DEFAULT */
+  .nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    background: white;
+  }
+
+  /* SHOW NAV WHEN OPEN */
+  .navOpen {
+    display: flex;
+  }
+}

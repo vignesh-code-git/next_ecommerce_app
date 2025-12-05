@@ -1,0 +1,11 @@
+/* RESET DEFAULT BROWSER MARGINS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* OPTIONAL: make body clean */
+body {
+  font-family: "roboto";
+}

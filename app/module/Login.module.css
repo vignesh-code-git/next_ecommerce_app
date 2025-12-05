@@ -1,0 +1,119 @@
+/* Center Page */
+.loginContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* Login Card */
+.loginCard {
+  width: 380px;
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  margin-top: -100px;
+}
+
+/* Titles */
+.loginCard h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #6b6b6b;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Label */
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.inputType {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 8px 0 20px 0;
+  font-size: 14px;
+}
+
+.inputType:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* Forgot Password */
+.forgot {
+  font-size: 13px;
+  color: #333;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+/* Ensure Input & Button Width Match */
+.formGroup * {
+  box-sizing: border-box;
+}
+
+/* Login Button */
+.loginBtn {
+  width: 100%;
+  padding: 12px;
+  background: #0a0a0a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.loginBtn:hover {
+  background: #1a1a1a;
+}
+
+/* Google Button */
+.googleBtn {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.googleBtn img {
+  width: 20px;
+}
+
+/* Signup Text */
+.signupText {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.signupText span {
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+}
