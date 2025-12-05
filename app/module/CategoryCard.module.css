@@ -1,8 +1,11 @@
 .cardWrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
+  flex-wrap: wrap;              /* allow cards to wrap on smaller screens */
+  justify-content: center;      /* center all cards horizontally */
+  align-items: center;          /* center cards vertically if wrapper has height */
+  gap: 20px;                    /* spacing between cards */
+  margin: 0 auto;               /* center wrapper itself if it has width */
+  padding: 20px;                /* optional padding */
 }
 
 .card {
@@ -16,14 +19,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-family: Arial, sans-serif;
   background: #fff;
   transition: transform 0.2s;
 }
 
+
 .card:hover {
-  transform: translateY(-5px);
+ 
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 

@@ -10,6 +10,7 @@ export const metadata = {
 
 export default function CategoryCard({ product }) {
   return (
+    
     <div className={styles.cardWrapper}>
       <div className={styles.card}>
         <div className={styles.imageBox}>
